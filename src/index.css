@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s infinite;
+}
+
+.result-highlight {
+  transition: all 0.3s ease;
+}
+
+.item-chip {
+  transition: all 0.2s;
+}
+
+.item-chip:hover {
+  transform: scale(1.05);
+}
